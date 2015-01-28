@@ -16,7 +16,7 @@ angular.module( 'sample', [
 .controller( 'AppCtrl', function AppCtrl ( $scope, $location ) {
   $scope.$on('$routeChangeSuccess', function(e, nextRoute){
     if ( nextRoute.$$route && angular.isDefined( nextRoute.$$route.pageTitle ) ) {
-      $scope.pageTitle = nextRoute.$$route.pageTitle + ' | ngEurope Sample' ;
+      $scope.pageTitle = nextRoute.$$route.pageTitle + ' | Qinghai Sample' ;
     }
   });
 })
