@@ -17,7 +17,7 @@ angular.module( 'sample.login', [
   $scope.login = function() {
     $http({
       //url: 'http://localhost:3001/sessions/create',
-      url:'https://www.yuhongtech.net/mobile/api/v1/users/login',
+      url:'https://www.yuhongtech.net/admin/api/v1/auth/login',
       method: 'POST',
       data: $scope.user
     }).then(function(response) {

@@ -18,7 +18,7 @@ angular.module( 'sample.home', [
   $scope.callAnonymousApi = function() {
     // Just call the API as you'd do using $http
     //callApi('Anonymous', 'http://localhost:3001/api/random-quote');
-    callApi('Anonymous', 'https://www.yuhongtech.net/mobile/api/v1/lottery/lotteryHall');
+    callApi('Anonymous', 'https://www.yuhongtech.net/admin/api/v1//auth/loggedin');
   }
 
   $scope.logout = function() {
@@ -32,7 +32,7 @@ angular.module( 'sample.home', [
 
   $scope.callSecuredApi = function() {
     //callApi('Secured', 'http://localhost:3001/api/protected/random-quote');
-    callApi('Secured', 'https://www.yuhongtech.net/mobile/api/v1/lottery/orders');
+    callApi('Secured', 'https://www.yuhongtech.net/admin/api/v1/uilotterynews?limit=1');
   }
 
   function callApi(type, url) {
